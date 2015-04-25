@@ -32,6 +32,7 @@ gulp.task('clean', function () {
 
 gulp.task('build-js', function () {
   return browserify('./index.js')
+        .transform(require('jadeify'))
         .bundle()
         .pipe(source('app.build.js'))
         .pipe(gulp.dest('./build/'));
