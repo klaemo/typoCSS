@@ -7,6 +7,7 @@
 ##Installation
 
 ```
+git clone https://github.com/sto3psl/typoCSS
 npm install
 npm run build
 npm start
